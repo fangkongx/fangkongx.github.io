@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <style>
+body {
+  margin: 10pt;
+  padding: 0;
+  font-size: 10pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;  /* 正文字体颜色保持黑色 */
+  background-color: #ffffff;
+  text-align: center;  /* 让所有文本居中 */
+}
+
+#pagecontainer {
+  width: 800px;
+  margin: 0 auto;  /* 让整个页面内容居中 */
+  text-align: left;  /* 让子元素回归默认左对齐，避免所有文本都居中 */
+}
+
+a:link {
+  color: #DC582A;  /* 采用 Pantone 7578C（橙色） */
+}
+
+a:visited {
+  color: #b84922;  /* 访问过的链接颜色稍深 */
+}
+
+a:hover, a:active {
+  color: #963d1b;  /* 悬停时变为深橙色，增强交互感 */
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  text-align: center;  /* 让标题居中 */
+}
+
+h1 {
+  font-size: 16pt;
+  color: #DC582A;  /* 标题采用 Pantone 7578C */
+  margin: 0;
+  padding-top: .5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 14pt;
+  color: #DC582A;
+  margin: 0;
+  padding-top: .8em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 12pt;
+  color: #DC582A;
+  margin: 0;
+  padding-top: .8em;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10pt;
+  margin-left: 0pt;
+  text-align: left;  /* 让列表项居中 */
+}
+
+li {
+  margin-top: 5pt;
+}
+
+/* 让描述部分的列表左对齐，避免过度居中 */
+#description li {
+  list-style-type: disc;
+  margin-left: 15pt;
+  text-align: left;
+}
+
+/* 表格样式优化，去除边框 */
+table {
+  font-size: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;  /* 移除整体表格边框 */
+  margin: 10px auto;  /* 让表格在页面中居中 */
+}
+
+th, td {
+  text-align: left; /* 保持表格内容左对齐，避免数据混乱 */
+  padding: 6px;
+  border: none;  /* 去除单元格的边框 */
+}
+
+th {
+  color: #DC582A;  /* 仅修改表头文字颜色 */
+  font-weight: bold;
+}
+
+tr:not(:first-child):nth-child(odd) {
+  background-color: #fdf6f4;  /* 非常淡的橙色，增强层次感 */
+}
+
+tr:not(:first-child):nth-child(even) {
+  background-color: #fbece6;  /* 柔和的背景色 */
+}
+
+/* 仅从第二行开始应用悬停颜色 */
+tr:not(:first-child):hover {
+  background-color: #f6d4c8;  /* 悬停时稍深，增加交互体验 */
+}
+
+
+    </style>
+    <title>MAT8034: Machine Learning</title>
+    <style type="text/css" abt="234"></style>
+</head>
+<body>
+    <div id="pagecontainer">
+    <div id="heading">
+        <h1>MAT8034: Machine Learning</h1>
+
+        <p style="text-align:center">Southern University of Science and Technology, Spring 2025</p> 
+    </div>
+   
+
+    <div id="staff">
+        <h2>Teaching Staff</h2>
+
+        <table>
+            <tbody>
+            <tr>
+                <th style="width:15%"></th>
+                <th style="width:20%">name</th>
+                <th style="width:30%">email</th>
+                <th style="width:35%">office hour</th>
+            </tr>
+
+            <tr>
+                <td>Instructor</td>   
+                <td><a href="https://fangkongx.github.io/" target="_blank">Fang Kong</a></td>
+                <td>kongf@sustech.edu.cn</td>
+                <td>Wed 10-12 AM <br>Room 315, Business School Building </td>
+            </tr>
+
+            <tr>
+                <td>Chief TA</td>   
+                <td>Yunshan Li</td>
+                <td>12331105@mail.sustech.edu.cn</td>
+                <td>Thur 2-4 PM <br>Room 342, Business School Building</td>
+            </tr>
+
+            <tr>
+                <td>TA</td>   
+                <td>Qiqian Li</td>
+                <td>12431478@mail.sustech.edu.cn</td>
+                <td>Thur 2-4 PM <br>Room 337, Business School Building </td>
+            </tr>
+
+            <tr>
+                <td></td>   
+                <td>Haoran Tang</td>
+                <td>12432698@mail.sustech.edu.cn</td>
+                <td>Wed 2:30-4:30 PM <br>Room 648, College of Engineering, South Tower                </td>
+            </tr>
+
+            
+        </tbody>
+        </table>
+    </div>
+
+    <!-- <div id="announcements">
+        <a name="announcements"><h2>News</h2></a> 
+        <ul>
+            
+        </ul></div> -->
+
+    <div id="courseinfo">
+        <h2>Course Information</h2>
+        <p></p>
+        <p><b>Lecture times: </b> Wed 7:00-9:50 PM at Business School Building 101
+        </p>
+        <p><b>Grading: </b> Final exam (40%), project (40%), and assignments (20%)
+        </p>
+        <p><b>References: </b>
+        <ul>
+            <li><a href="https://cs229.stanford.edu">CS 229 Machine Learning</a> by Stanford [<a href="https://cs229.stanford.edu/main_notes.pdf">Lecture notes link</a>]  </li>
+            <li><a href="http://incompleteideas.net/book/the-book-2nd.html">Reinforcement Learning: An Introduction</a> by Richard S. Sutton and Andrew G. Barto </li>
+            <li><a href="https://link.springer.com/book/9780387310732">Pattern Recognition and Machine Learning</a> by Christopher M. Bishop  </li>
+            <li><a href="https://link.springer.com/book/10.1007/978-0-387-84858-7">Elements of Statistical Learning</a> by Travor Hastie, Robert Tibshirani, Jerome Friedman</li>
+        </ul></p>
+    </div>
+
+    <div id="lectures">
+        <a name="lectures"></a>
+        <h2>Schedule</h2>
+
+        <table id="schedule">
+        <tbody><tr>
+            <th style="width:7%">week</th>
+            <th style="width:10%">date</th>
+            <th style="width:45%">topic</th>
+            <th style="width:38%">materials</th>
+        </tr>
+
+        <tr>
+            <td>1</td><td>Feb 19</td><td>1 Introduction and basics</td><td><a href="" target="_blank">pdf</a></td>
+        </tr>
+        <tr>
+            <td>2</td><td>Feb 26</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>3</td><td>Mar 5</td><td></td><td></td>
+        </tr>
+        <!-- <tr>
+            <td>16</td><td>Jun 4</td><td style="color: #903"><i>Presentation</i></td><td> </td>
+        </tr> -->
+
+        </tbody></table>
+    </div>
+
+    </div>
+</body>
+</html>
