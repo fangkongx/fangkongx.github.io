@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <style>
+body {
+  margin: 10pt;
+  padding: 0;
+  font-size: 10pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;  /* 正文字体颜色保持黑色 */
+  background-color: #ffffff;
+  text-align: center;  /* 让所有文本居中 */
+}
+
+#pagecontainer {
+  width: 800px;
+  margin: 0 auto;  /* 让整个页面内容居中 */
+  text-align: left;  /* 让子元素回归默认左对齐，避免所有文本都居中 */
+}
+
+a:link {
+  color: #DC582A;  /* 采用 Pantone 7578C（橙色） */
+}
+
+a:visited {
+  color: #b84922;  /* 访问过的链接颜色稍深 */
+}
+
+a:hover, a:active {
+  color: #963d1b;  /* 悬停时变为深橙色，增强交互感 */
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  text-align: center;  /* 让标题居中 */
+}
+
+h1 {
+  font-size: 16pt;
+  color: #DC582A;  /* 标题采用 Pantone 7578C */
+  margin: 0;
+  padding-top: .5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 14pt;
+  color: #DC582A;
+  margin: 0;
+  padding-top: .8em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 12pt;
+  color: #DC582A;
+  margin: 0;
+  padding-top: .8em;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10pt;
+  margin-left: 0pt;
+  text-align: left;  /* 让列表项居中 */
+}
+
+li {
+  margin-top: 5pt;
+}
+
+/* 让描述部分的列表左对齐，避免过度居中 */
+#description li {
+  list-style-type: disc;
+  margin-left: 15pt;
+  text-align: left;
+}
+
+/* 表格样式优化，去除边框 */
+table {
+  font-size: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;  /* 移除整体表格边框 */
+  margin: 10px auto;  /* 让表格在页面中居中 */
+}
+
+th, td {
+  text-align: left; /* 保持表格内容左对齐，避免数据混乱 */
+  padding: 6px;
+  border: none;  /* 去除单元格的边框 */
+}
+
+th {
+  color: #DC582A;  /* 仅修改表头文字颜色 */
+  font-weight: bold;
+}
+
+tr:not(:first-child):nth-child(odd) {
+  background-color: #fdf6f4;  /* 非常淡的橙色，增强层次感 */
+}
+
+tr:not(:first-child):nth-child(even) {
+  background-color: #fbece6;  /* 柔和的背景色 */
+}
+
+/* 仅从第二行开始应用悬停颜色 */
+tr:not(:first-child):hover {
+  background-color: #f6d4c8;  /* 悬停时稍深，增加交互体验 */
+}
+
+
+    </style>
+    <title>STA303: Artificial Intelligence</title>
+    <style type="text/css" abt="234"></style>
+</head>
+<body>
+    <div id="pagecontainer">
+    <div id="heading">
+        <h1>STA303: Artificial Intelligence</h1>
+
+        <p style="text-align:center">Southern University of Science and Technology, Fall 2025</p> 
+    </div>
+   
+
+    <div id="staff">
+        <h2>Teaching Staff</h2>
+
+        <table>
+            <tbody>
+            <tr>
+                <th style="width:15%"></th>
+                <th style="width:20%">name</th>
+                <th style="width:30%">email</th>
+                <th style="width:35%">office hour</th>
+            </tr>
+
+            <tr>
+                <td>Instructor</td>   
+                <td><a href="https://fangkongx.github.io/" target="_blank">Fang Kong</a></td>
+                <td>kongf@sustech.edu.cn</td>
+                <td>Wed 1:00-3:00 PM <br>Room 315, Business School Building </td>
+            </tr>
+
+            <tr>
+                <td>Chief TA</td>   
+                <td>Bochao Li</td>
+                <td>12531179@mail.sustech.edu.cn</td>
+                <td>Wed 10:20-12:00 AM <br>Room 344, Business School Building</td>
+            </tr>
+
+            <tr>
+                <td>TA</td>   
+                <td>Minghan Wang</td>
+                <td>12532247@mail.sustech.edu.cn</td>
+                <td>Wed 10:00-12:00 AM <br>Room 344, Business School Building </td>
+            </tr>
+
+            <tr>
+                <td></td>   
+                <td>Kongchang Zhou</td>
+                <td>12548015@mail.sustech.edu.cn</td>
+                <td>Wed 10:00-12:00 AM <br>Room 344, Business School Building  </td>
+            </tr>
+
+            
+        </tbody>
+        </table>
+    </div>
+
+    <!-- <div id="announcements">
+        <h2>News</h2>
+        <ul>
+            <li>[Mar 19] Assignment 1 has been released. Please <b>submit your solutions by April 10</b>. 
+            <li>[Mar 12] The final project is released. Please <b>register your group information before Mar 23</b> and <b>submit the proposal before Apr 6</b>.</li>
+        </ul></div> -->
+
+    <div id="courseinfo">
+        <h2>Course Information</h2>
+        <p></p>
+        <p><b>Lecture times: </b> Thur 14:00-16:00 at Room 111, Teaching Building No. 1 <br>
+         <b>Lab times:</b> Thur 16:00-18:00 at Room 507, Teaching Building No. 3
+        </p>
+        <p><b>Grading: </b> Final exam (30%), project (25%), assignments (40%), and attendance (5%)
+        </p>
+        <p><b>References: </b>
+        <ul>
+          <li><a href="https://inst.eecs.berkeley.edu/~cs188/fa25/">CS188 Introduction to Artificial Intelligence</a> by Berkeley</li>  
+          <li><a href="https://people.engr.tamu.edu/guni/csce642/files/AI_Russell_Norvig.pdf">Artificial Intelligence: A Modern Approach</a> by Stuart Russell and Peter Norvig </li>
+          <li><a href="http://incompleteideas.net/book/the-book-2nd.html">Reinforcement Learning: An Introduction</a> by Richard S. Sutton and Andrew G. Barto </li> 
+          <li><a href="https://cs229.stanford.edu">CS229 Machine Learning</a> by Stanford [<a href="https://cs229.stanford.edu/main_notes.pdf">Lecture notes link</a>]  </li> 
+        </ul></p>
+    </div>
+
+    <div id="lectures">
+        <a name="lectures"></a>
+        <h2>Schedule</h2>
+
+        <table id="schedule">
+        <tbody><tr>
+            <th style="width:7%">week</th>
+            <th style="width:10%">date</th>
+            <th style="width:45%">topic</th>
+            <th style="width:38%">materials</th>
+        </tr>
+
+        <tr>
+            <td>1</td><td>Sept 11</td><td>1 Introduction</td><td><a href="" target="_blank">pdf</a></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>2 Uninformed Search</td><td><a href="" target="_blank">pdf</a></td>
+        </tr>
+        <tr>
+            <td>2</td><td>Sept 18</td><td> </td><td></td>
+        </tr>
+        
+        </tbody></table>
+    </div>
+
+    </div>
+</body>
+</html>
